@@ -5,59 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>계산기</title>
     <style>
-        fieldset{
+        table{
             width: 200px; height: 200px;
-            border-radius: 10px 10px 10px 10px;
+            border-radius: 5px 5px 5px 5px;
+            background-color: #DDDDDD;
             text-align: center;
         }
-        .radius{
-            background-color: #DDDDDD;
-            border-radius: 10px 10px 10px 10px;
+        td{
+            border-radius: 5px 5px 5px 5px;
         }
         .res{
             width: 200px; height: 40px;
             background-color: #70C738;
-            border-radius: 10px 10px 10px 10px;
         }
         .pad{
             background-color: #373737;
-            border-radius: 10px 10px 10px 10px;
+            color: white;
         }
         .dmas{
             background-color: #FA960A;
-            border-radius: 10px 10px 10px 10px;
+            color: white;
+
         }
         .bc{
             width: 100px;
             background-color: gray;
             border-radius: 10px 10px 10px 10px;
+            color: white;
         }
     </style>
 </head>
 <body>
     <h2>계산기</h2>
-    <fieldset class="radius">
-        <div>
-            <div class="res" style="text-align: right;">123+654</div>
-            <span class="bc">BackSpace</span>
-            <span class="bc">C</span> <br>
-            <span class="pad">1</span>
-            <span class="pad">2</span>
-            <span class="pad">3</span>
-            <span class="dmas">/</span> <br>
-            <span class="pad">4</span>
-            <span class="pad">5</span>
-            <span class="pad">6</span>
-            <span class="dmas">x</span> <br>
-            <span class="pad">7</span>
-            <span class="pad">8</span>
-            <span class="pad">9</span>
-            <span class="dmas">+</span> <br>
-            <span class="pad">=</span>
-            <span class="pad">0</span>
-            <span class="pad">.</span>
-            <span class="dmas">-</span> <br>
-        </div>
-    </fieldset>
+
+    <table>
+        <tr class="res" style="text-align: right;">
+            <td colspan="4">123+456</td>
+        </tr>
+        <tr class="bc">
+            <td colspan="2" style="width: 50%;">BackSpace</td>
+            <td colspan="2" style="width: 50%;">C</td>
+        </tr>
+        <tr class="pad">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td class="dmas">/</td>
+        </tr>
+        <tr class="pad">
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td class="dmas">x</td>
+        </tr>
+        <tr class="pad">
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td class="dmas">+</td>
+        </tr>
+        <tr class="pad">
+            <td>=</td>
+            <td>0</td>
+            <td>.</td>
+            <td class="dmas">-</td>
+        </tr>
+    </table>
 </body>
 </html>

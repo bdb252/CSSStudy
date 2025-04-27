@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 5px solid gray;
+            text-align: center;
+        }
+        #border1{
+            border: 0px;
+            border-bottom: dotted gray;
+            padding: 20px;
+            margin: 40px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="radio" name="id" checked>아이디 찾기
+        <input type="radio" name="pw" >비밀번호찾기 <br>
+        <div >
+            <div id="border1" >
+                <span style="color: red;">></span>
+                이름(대표자명)<input type="text" size="50">
+                <br>
+                
+                <span style="color: red;">></span>
+                <select name="phonenum" multiple size="1">
+                    <option value="N">휴대전화 <input type="text" size="3">-<input type="text" size="4">-<input type="text" size="4"> </option>
+                    <option value="E">이메일 <input type="text">@ <input type="text"></option>
+                </select> 
+
+            </div>
+            <br>
+            아이디를 찾기 위해서 이름과 휴대번호 혹은 이메일을 입력하세요
+            <br>
+        </div>
+        <br>
+    </form>
+    <br>
+
+    <form action="">
+        <input type="radio" name="id">아이디 찾기
+        <input type="radio" name="pw" checked>비밀번호찾기 <br>
+        <div >
+            <div id="border1">
+                <span style="color: red;">></span>
+                아이디<input type="text" size="50">
+                <br>
+
+                <span style="color: red;">></span>
+                이름(대표자명)<input type="text" size="50">
+                <br>
+                
+                <span style="color: red;">></span>
+                <select name="phonenum" multiple size="1">
+                    <option value="N">휴대전화 <input type="text" size="3">-<input type="text" size="4">-<input type="text" size="4"> </option>
+                    <option value="E">이메일 <input type="text">@ <input type="text"></option>
+                </select> 
+
+            </div>
+            <br>
+            아이디를 찾기 위해서 이름과 휴대번호 혹은 이메일을 입력하세요요
+            <br>
+        </div>
+        <br>
+    </form>
+</body>
+</html>
