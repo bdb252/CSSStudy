@@ -10,10 +10,13 @@
             width: 150px;
             text-align: left;
             padding: 10px;
+            font-weight: bold;
         }
         table{
-            /* border: 1px solid black; */
+            border: 0.5px solid gray;
+            font-size: 12px;
             background-color: gray;
+            border-collapse: collapse;
         }
         #myspan{
             background-color: black; 
@@ -21,49 +24,54 @@
         }
         td{
             background-color: white;
+            border: 0.5px solid gray;
+        }
+        span{
+            color: red;
         }
     </style>
 </head>
 <body>
     <table>
         <caption style="text-align: right;">
-            <span style="color: red;">*</span>필수 입력
+            <span >*</span>필수 입력
         </caption>
         <tr>
-            <th id="mytable">
-                <span style="color: red;">*</span>아이디
-            </th>
+            <td id="mytable">
+                <span >*</span>아이디
+            </td>
             <td>
                 <input type="text"> 
                 <input type="button" value="중복확인" id="myspan" >
+                &nbsp;+4~15자, 첫 영문자, 영문자와 숫자 조합
             </td>
         </tr>
         <tr>
-            <th id="mytable">
-                <span style="color: red;">*</span>비밀번호
-            </th>
+            <td id="mytable">
+                <span >*</span>비밀번호
+            </td>
             <td>
                 <input type="text">
             </td>
         </tr>
         <tr>
-            <th id="mytable">
-                <span style="color: red;">*</span>비밀번호 확인
-            </th>
+            <td id="mytable">
+                <span >*</span>비밀번호 확인
+            </td>
             <td>
                 <input type="text"> (확인을 위해 다시 입력해주세요.)
             </td>
         </tr>
         <tr>
-            <th id="mytable">
-                <span style="color: red;">*</span>이름
-            </th>
+            <td id="mytable">
+                <span >*</span>이름
+            </td>
             <td>
                 <input type="text">
             </td>
         </tr>
         <tr>
-            <th id="mytable">생년월일</th>
+            <td id="mytable">생년월일</td>
             <td>
                 <input type="radio" name="male">남자
                 <input type="radio" name="male">여자
@@ -74,9 +82,9 @@
             </td>
         </tr>
         <tr>
-            <th rowspan="2" id="mytable">
-                <span style="color: red;">*</span>이메일
-            </th>
+            <td rowspan="2" id="mytable">
+                <span >*</span>이메일
+            </td>
             <td>
                 <input type="text">@<input type="text">
                 <input type="radio" >수신허용
@@ -89,15 +97,15 @@
             </td>
         </tr>
         <tr>
-            <th rowspan="3" id="mytable">주소</th>
+            <td rowspan="3" id="mytable">주소</td>
             <td>
                 <input type="button" value="주소확인" id="myspan" >
-                <input type="text">(우편번호)   
+                <input type="text" size="6"> (우편번호)   
             </td>
         </tr>
         <tr>
             <td>
-                <input type="text" size="30">
+                <input type="text" size="40">
             </td>
         </tr>
         <tr>
@@ -106,7 +114,7 @@
             </td>
         </tr>
         <tr>
-            <th id="mytable">전화번호</th>
+            <td id="mytable">전화번호</td>
             <td>
                 <input type="text" size="3">-
                 <input type="text" size="3">-
@@ -114,9 +122,9 @@
             </td>
         </tr>
         <tr>
-            <th id="mytable">
-                <span style="color: red;">*</span>휴대전화
-            </th>
+            <td id="mytable">
+                <span >*</span>휴대전화
+            </td>
             <td>
                 <input type="text" size="3">-
                 <input type="text" size="3">-
@@ -126,25 +134,26 @@
             </td>
         </tr>
         <tr>
-            <th id="mytable">
-                <span style="color: red;">*</span>관심분야
-            </th>
+            <td id="mytable">
+                <span >*</span>관심분야
+            </td>
             <td>
                 <select name="interest" >
+                    <option value="A">:: 관심분야 선택 ::</option>
                     <option value="F">프론트엔드</option>
                     <option value="B">백엔드</option>
                 </select>
             </td>
         </tr>
         <tr>
-            <th id="mytable">
-                <span style="color: red;">*</span>가입경로
-            </th>
+            <td id="mytable">
+                <span >*</span>가입경로
+            </td>
             <td>
                 <select name="path">
+                    <option value="A">:: 가입경로 선택 ::</option>
                     <option value="F">지인추천</option>
                     <option value="I">인터넷</option>
-
                 </select>
             </td>
         </tr>
