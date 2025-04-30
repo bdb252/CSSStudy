@@ -119,17 +119,19 @@
         <fieldset>
             <span>B.myDiv의 하위태그</span>
         </fieldset>
-        <span class="myclass">
-            C.클래스를 부여한 span 태그
-        </span>
+        <span class="myclass">C.클래스를 부여한 span 태그</span>
     </div>
 
-    <div >
-        <span class="myclass">D</span>
+    <!-- span태그 중 myclass라는 클래스속성이 부여된 엘리먼트를 선택
+     D, E모두 선택되어 배경이 검정, 글씨가 노랑으로 나옴 
+     E는 나중에 쓴 span .myclass에 적용됨. 
+     나중에 선언된 스타일이 우선순위가 더 높음-->
+    <span >
+        <div class="myclass">D</div>
         <fieldset>
             <span class="myclass">E</span>
         </fieldset>
-    </div>
+    </span>
     
     <style>
         /* 
