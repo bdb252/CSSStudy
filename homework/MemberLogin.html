@@ -8,27 +8,29 @@
         div{
             border: 1px solid gray;
             text-align: center;
+            min-width: 500px;
+        }
+        form{
+            width: 100%;
+            justify-items: center;
         }
         table{
+            text-align: center;
+            width: 100px;
+            height: 80px;
             padding: 50px;
-        }
-        img{
-            /* display: block; */
         }
 </style>
 </head>
 <body>
     <div>
         <form action="">
+            <img src="loginresource/login_logo.gif" >
             <table>
                 <tr>
-                    <th>
-                        <img src="loginresource/login_logo.gif" width="100%">
-                    </th>
-                </tr>
-                <tr>
                     <td>
-                        <input type="text" name="name" placeholder="아이디" style="width: 200px; height: 40px;"><br>
+                        <input type="text" name="name" placeholder="아이디" 
+                        style="width: 200px; height: 40px;"><br>
                     </td>
                     <td rowspan="2">
                         <input type="image" src="loginresource/login_bt.gif">
@@ -36,7 +38,8 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="password" name="passwd" placeholder="●●●●" style="width: 200px; height: 40px;"><br>
+                        <input type="password" name="passwd" placeholder="●●●●" 
+                        style="width: 200px; height: 40px;"><br>
                     </td>
                 </tr>
             </table>
